@@ -1,0 +1,532 @@
+@media screen  and (max-width: 1200px) {
+    #app{
+        .main{
+            .content-banner {
+                grid-template-columns: 100%;
+                row-gap: 30px;
+                    .content-news{
+                        // padding-bottom: 15px;
+                        .new-wrap{
+                            padding: 0 5%;
+                            height: 150px;
+                            margin-bottom: 15px;
+                            // box-sizing: border-box;
+                            .new-box{
+                                padding-top: 10px;
+                                .act-title{
+                                    height: 23px;
+                                    -webkit-line-clamp: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+                // 游戏列表
+            .content-wrapper-gameList{
+                .company-activities {
+                    .service-btm{
+                        grid-template-columns:200px 1fr;
+                    }
+                }
+            }
+            // 游戏详情
+            .game-detail-wrap{
+                .gameHead{
+                    grid-template-columns: 100%;
+                    grid-column-gap: 0px;
+                    row-gap: 20px;
+                }
+            }
+    }
+    }
+    .content-wrapper{
+        .company-activities{
+            .act-title{
+                width: 240px!important;
+            }
+        }
+    }
+ 
+  }
+    @media screen  and (max-width: 1150px) and (min-width: 1024px)  {
+       #app{
+        .content-wrapper{
+            .company-activities{
+                .act-title{
+                    width: 200px!important;
+                }
+            }
+        }
+        .gameLick{
+            .lickWrap{
+                grid-template-columns: 20% 60% 20%;
+            }
+        }
+        // 个人创作
+        .content-game-create{
+            .gw-create-game-list{
+                .recommenWrap{
+                    grid-template-columns: repeat(3, 240px);
+                }
+            }
+            form{
+                .el-form-item__content{
+                    .reset{
+                        right: 6%;
+                    }
+                }
+            }
+        }
+       }
+        
+    }
+    @media screen  and (max-width: 1024px) {
+      #app{
+        .main{
+            .content-banner{
+                margin-top: 80px;
+                row-gap: 20px;
+            }
+            .content-wrapper{
+             
+                .company-activities {
+                    grid-template-columns: 100%;
+                    column-gap: 20px;
+                    row-gap: 20px;
+                    margin: 20px 0;
+                    .activities{
+                        row-gap: 20px;
+                        margin-top: 20px;
+                    }
+                    .act-title{
+                        width: 300px!important;
+                    }
+                }
+                .calendar-Section{
+                    grid-template-columns: 1fr;
+                }
+            }
+            // 游戏列表 gameList
+            .content-wrapper-gameList{
+                .company-activities {
+                    .service-btm{
+                        grid-template-columns:160px 1fr;
+                        .btm-nav{
+                            height: 130px;
+                        }
+                        .service-wrap{
+                            .name{
+                                font-size: 18px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            .detail{
+                                font-size: 16px;
+                                margin: 4px 0 8px;
+                            }
+                            .btns{
+                                button{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+                // 游戏内容 // 游戏新闻 //文章详情
+            .content-game-contents,.content-game-news,.content-article-detail,.content-game-sign{
+                .company-activities {
+                    margin-top: 90px;
+                    width: 100%;
+                    .gameSection,.gameNews,.gameActicle{
+                        grid-template-columns:100%;
+                        margin: 20px 0;
+                        column-gap: 20px;
+                        row-gap: 20px;
+                    }
+                    .gameSection{
+                        .read-more{
+                            position: static;
+                            justify-content: space-between;
+                            .new-date{
+                                margin: 0;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            .content-game-detail{
+                .gameSection{
+                    grid-template-columns:100%;
+                    row-gap: 20px;
+                }
+            }
+            // 日历
+            .game-calendar-contents{
+                .gameSection{
+                    grid-template-columns:100%;
+                    row-gap: 20px;
+                    .table{
+                        ul {
+                            li {
+                                grid-template-columns:25% 70%;
+                                grid-column-gap: 10px;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+            // 个人创作
+            .content-game-create{
+                .gw-create-form{
+                    padding: 24px 150px 40px;
+                    form{
+                        .el-form-item__content{
+                            .reset{
+                                right: 40px;
+                            }
+                        }
+                    }
+                }
+                .gw-create-game-list{
+                    .recommenWrap{
+                        grid-template-columns: repeat(3, 240px);
+                    }
+                }
+            }
+        }
+      }
+        
+    }
+    @media screen  and (max-width: 960px)  {
+        #app{
+            .main{
+                 // 游戏列表 gameList
+                .content-wrapper-gameList{
+                    .gameSection{
+                        grid-template-columns: 1fr;
+                        row-gap: 20px;
+                    }
+                    .company-activities {
+                        .head-wrap-btn{
+                            button{
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+                // 内容列表
+                .content-game-contents{
+                    .head-wrap-btn{
+                        // width: 100%;
+                        display: flex;
+                        flex-wrap: nowrap;
+                        // height: 30px;
+                        overflow-x: auto;
+                        .button{
+                            // margin:0 10px 5px 0;
+                            // margin-left: 10px;
+                            font-size: 16px;
+                            width: auto;
+                            min-width: auto;
+                            height: 22px;
+                            line-height: 22px;
+                            white-space: nowrap;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                // 游戏详情页
+                .content-game-detail{
+                    .gameTable{
+                        grid-template-columns: 100%;
+                        row-gap: 20px;
+                    }
+                }
+                // 个人创作
+                .content-game-create{
+                    .head-banner{
+                        height: 200px;
+                    }
+                    .head-info{
+                        grid-template-columns: 100px 1fr;
+                        padding-left: 10%;
+                        .imgBox{
+                            width: 100px;
+                            height: 100px;
+                            margin-top: -50px;
+                        }
+                    }
+                    .gw-create-form{
+                        padding: 20px 10% 25px;
+                    }
+                    .gw-create-game-list{
+                        .recommenWrap{
+                            grid-template-columns: repeat(2, 240px);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    @media screen  and (max-width: 720px) {
+        #app{
+            .main{
+                 // 游戏列表 gameList
+                .content-wrapper-gameList{
+                    .company-activities {
+                        .service-btm{
+                            grid-template-columns:150px 1fr;
+                        }
+                    }
+                }
+                // 游戏内容
+                .content-game-contents{
+                    .company-activities {
+                        .service-btm{
+                            height: auto;
+                            grid-template-columns:100%;
+                            row-gap: 20px;
+                        }
+                    }
+                }
+                // 文章详情
+                .content-article-detail{
+                    .gameActicle{
+                        .gameActicleContent{
+                            padding: 20px 15px 20px 35px;
+                            .gameName{
+                                font-size: 24px;
+                                line-height: 24px;
+                            }
+                            .headNav{
+                                span,.new-date{
+                                    min-width: 100%;
+                                    line-height: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+                // 注册详情
+                .content-game-sign{
+                    .gw-sign-wrap{
+                        margin: 20px auto;
+                        // width: auto;
+                        max-width: 80%;
+                        padding:15px 10px 10px;
+                        .gw-sign{
+                            .gw-sign-title{
+                                font-size: 18px;
+                                line-height: 32px;
+                                margin-bottom: 10px;
+                            }
+                            form{
+                                .gw-form-code{
+                                    .el-form-item__content{
+                                        grid-template-columns:0 1fr 50% 0;
+                                        .el-button{
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                            padding: 0 8px;
+                                        }
+                                    }
+                                }
+                                .el-form-item__content{
+                                    .el-form-item__error{
+                                        padding-left: 44px;
+                                    }
+                                    // .el-input,.el-button{
+                                    //     // height: 30px;
+                                    //     // line-height: 30px;
+                                    // }
+                                    input{
+                                        height: 100%;
+                                        line-height: 100%;
+                                        padding-left: 44px;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                // about 关于
+                .content-game-about {
+                    .company-activities{
+                        .gw-about-wrap{
+                            margin: 0 auto;
+                            padding: 0 0 20px;
+                            .gw-about-detail,.gw-about-content{
+                                width: 98%;
+                            }
+                        }
+                    } 
+                }
+                // 日历详情
+                .game-calendar-contents{
+                    .gameSection{
+                        .service-btm{
+                            grid-template-columns:40% 1fr;
+                        }
+                        .table{
+                            ul {
+                                li {
+                                    span{
+                                        font-size: 14px;
+                                    }
+                                    // grid-template-columns:100%;
+                                    // grid-row-gap: 10px;
+                                    // .name{
+                                    //     opacity: .6;
+                                        
+                                    // }
+                                }
+                            }
+                           
+                        }
+
+                    }
+                }
+                  // 个人创作
+                .content-game-create{
+                    .company-activities{
+                        margin-bottom: 0;
+                    } 
+                    .head-banner{
+                        height: 140px;
+                    }
+                    .head-info{
+                        grid-template-columns: 70px 1fr;
+                        padding-left: 10%;
+                        column-gap: 10px;
+                        .imgBox{
+                            width: 70px;
+                            height: 70px;
+                            margin-top: -35px;
+                        }
+                        .head-info-rit{
+                            .name-box{
+                                span{
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                                button{
+                                    padding: 3px 5px;
+                                }
+                            }
+                            .head-detail{
+                                font-size: 14px;
+                            }
+                            
+                        }
+                    }
+                    .gw-create-form{
+                        padding: 20px 10% 25px;
+                        .el-form{
+                            .el-form-item{
+                                grid-template-columns: 0 25% 1fr 0;  
+                            } 
+                            // .el-select{
+                               
+                            // }
+                            .el-input{
+                                // width: 120%;
+                                width: auto;
+                            }
+                            .el-input__prefix{
+                                right: 20px;
+                            }
+                            .el-form-item__label,.el-input__inner{
+                                font-size: 16px;
+                            }
+                        }
+                        .reset{
+                            left: 76%;
+                        }
+                    }
+                    .gw-create-game-list{
+                        .recommenWrap{
+                            grid-template-columns: 240px;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        } 
+  
+    }
+    @media screen  and (max-width: 720px) and (min-width: 320px)  {
+       #app{
+        .main{
+            .content-wrapper{
+             
+                .company-activities {
+                    .activity {
+                        padding:4px 18px  6px;
+                        margin-bottom: 10px;
+                        .act-image-wrapper{
+                            width: 114px;
+                            height: 80px;
+                            margin: -14px 20px 0 0;
+                            .imgScaleBox{
+                                width: 114px;
+                                height: 80px;
+                            }
+                        }
+                        .act-wrap-box{
+                            .act-detail{
+                                height: 61px;
+                                -webkit-line-clamp: 3;
+                                line-height: 20px;
+                            }
+                        }
+                        
+                    }
+                    .company-newgame{
+                        width: 100%;
+                        .act-wrap-box{
+                            .act-title{
+                                width: 130px!important;
+                            }
+                        }
+                    }
+                   .company-contents{
+                    width: 100%;
+                        .activity{
+                            .act-image-wrapper{
+                                align-items: center;
+                                margin: 0 13px 0 0;
+                                height: 120px;
+                            }
+                            .act-wrap-box{
+                                .act-title{
+                                    width: 150px!important;
+                                }
+                            }
+                        }
+                    
+                   }
+                  
+                }
+            }
+            .content-game-create{
+                .gw-create-form{
+                    padding: 20px 10% 25px;
+                    .el-form{
+                        .el-input__prefix{
+                            right: 5px;
+                        }
+                    }
+                    // .reset{
+                    //     margin-left: -40px;
+                    // }
+                }
+            }
+        }
+       }
+    }
